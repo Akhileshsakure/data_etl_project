@@ -16,7 +16,7 @@ print(mathematica_df)
 
 #Product groupby Quantity
 product_sum_df = mathematica_df.groupby(by="ProductID")['Quantity'].sum()
-print(type(product_sum_df))
+# print(type(product_sum_df))
 
 #UnitPrice average
 product_mean_df = mathematica_df.groupby(by="ProductID")['UnitPrice'].mean()
